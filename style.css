@@ -4,7 +4,6 @@ body {
     font-family: Helvetica;
     font-size: 22px;
     color: seashell;
-    
 }
 
 /*HEADER*/
@@ -25,12 +24,9 @@ header {
 }
 
 nav {
-    
     display: inline;
     float: right;
     margin-top: 20px;
-    
-
 }
 
 
@@ -52,8 +48,7 @@ nav a {
     background-image: url('/images/img-mission-background.webp');
     
     background-position: center;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat; 
 }
 
 #hero-text {
@@ -121,9 +116,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    
-    
+    align-items: center;  
 }
 
 #addresses {
@@ -157,8 +150,6 @@ footer h5 {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 650px) {
-   
-
     header {
         text-align: center;
     }
@@ -168,14 +159,12 @@ footer h5 {
         background-color: black;
         height: 50px;
         position: relative;
-        top: -25px;
-        
+        top: -25px; 
     }
 
     nav a {
        position: relative;
        top: 15px; 
-       
     }
 }
 
@@ -186,8 +175,7 @@ footer h5 {
 }
 
 @media screen and (max-width: 1037px) {
-    #locations-title {
-        
+    #locations-title { 
         top: 1rem;
     }
 }
