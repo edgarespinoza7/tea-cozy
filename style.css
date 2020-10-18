@@ -10,7 +10,7 @@ body {
 /*HEADER*/
 
 header {
-    
+    background-color: black;
     height: 69px;
     position: fixed;
     width: 100%;
@@ -47,17 +47,147 @@ nav a {
     background-color: skyblue;
     position: relative;
     top: 70px;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     background-image: url('/images/img-mission-background.webp');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
 
 #hero-text {
     background-color: black;
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
 
+
+/* STORE SECTION */
+
+#store {
+    max-width: 1000px;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    text-align: center;
+}
+
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products {
+    margin: 0 1rem;
+}
+
+
+#products-img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+
+/* LOCATIONS SECTION */
+
+
+#locations {
+    min-height: 500px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url('/images/img-locations-background.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#locations-title {
+    text-align: center;
+    position: relative;
+    top: 8.5rem;
+}
+
+#locations-container {
+    max-width: 1200px;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#addresses {
+    min-width: 300px;
+    background-color: black;
+    margin: 15px 20px;
+    text-align: center;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    min-height: 200px;
+    
+    text-align: center;
+}
+
+#contact h2 {
+    padding-top: 1.5rem;
+}
+
+
+/* FOOTER */
+
+footer h5 {
+    margin-left: 20px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 650px) {
+   
+
+    header {
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        background-color: black;
+        height: 50px;
+        position: relative;
+        top: -25px;
+        
+    }
+
+    nav a {
+       position: relative;
+       top: 15px; 
+       
+    }
+}
+
+@media screen and (max-width: 680px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1037px) {
+    #locations-title {
+        
+        top: 1rem;
+    }
+}
